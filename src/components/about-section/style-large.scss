@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../../../public/fonts/cera-pro.ttf") format("truetype")
+}
+
+.section-container-large {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 84px;
+    margin-bottom: 112px;
+    background-color: white;
+}
+
+.columns-container-large {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-column-left-large {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+}
+
+.section-column-right-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 820px;
+}
+
+.section-header-large {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 20px;
+    color: #374957;
+}
+
+.line-large {
+    margin-left: 14px;
+}
+
+.text-row-large {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-header-large {
+    display: flex;
+    justify-content: flex-start;
+    width: 620px;
+    margin-top: 12px;
+    text-align: start;
+    font-weight: 500;
+    font-size: 32px;
+    color: #374957;
+}
+
+.text-large {
+    display: flex;
+    justify-content: flex-start;
+    width: 620px;
+    height: 133px;
+    margin-top: 12px;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    color: #374957;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+.view-more-link-large {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image-container-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-large {
+    background: url("./images/image.png") center/cover no-repeat;
+    width: 480px;
+    height: 350px;
+}
+
+.elements-container-large {
+    display: flex;
+    flex-wrap: wrap;
+    width: 520px;
+}
+
+.elements-row-large {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 47px;
+    width: 720px;
+}
+
+.element-container-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 180px;
+    margin-right: 40px;
+}
+
+.element-icon-large {
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
+
+.element-text-large {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    font-weight: 500;
+    font-size: 14px;
+    color: #8a8e93;
+    height: 54px;
+}

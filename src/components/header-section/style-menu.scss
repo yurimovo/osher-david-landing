@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../../../public/fonts/cera-pro.ttf") format("truetype")
+}
+
+.menu-large-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 520px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #374957;
+  width: 100px;
+  height: 32px;
+  :hover {
+    background-color: #f2e14e;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: #374957;
+  }
+}

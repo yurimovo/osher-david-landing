@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../../../public/fonts/cera-pro.ttf") format("truetype")
+}
+
+.tablet-pictures-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.tablet-column {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.tablet-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.tablet-square {
+  display: flex;
+  width: 160px;
+  height: 160px;
+}
+
+.tablet-hor {
+  display: flex;
+  width: 320px;
+  height: 160px;
+}
+
+.tablet-ver {
+  display: flex;
+  width: 160px;
+  height: 320px;
+}
+
+.tablet__popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.tablet__popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tablet__popup:target .popup__content__tlt1 {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.tablet__popup:target .popup__content__tlt2 {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.tablet__popup:target .popup__content__tlb1 {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.tablet__popup:target .popup__content__tmt1 {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.tablet__popup:target .popup__content__tmt2 {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.tablet__popup:target .popup__content__tr1 {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.tablet__popup:target .popup__content__tr2 {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.tablet__popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.tablet__popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content__tlt1 {
+  background: url("images/left-top-1.png") no-repeat center/cover;
+  width: 320px;
+  height: 320px;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  border-radius: 16px;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__content__tlt2 {
+  background: url("images/left-top-2.png") no-repeat center/cover;
+  width: 320px;
+  height: 320px;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  border-radius: 16px;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__content__tlb1 {
+  background: url("images/left-bottom-1.png") no-repeat center/cover;
+  width: 480px;
+  height: 240px;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  border-radius: 16px;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__content__tmt1 {
+  background: url("images/middle-top-1.png") no-repeat center/cover;
+  width: 320px;
+  height: 320px;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  border-radius: 16px;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__content__tmb1 {
+  background: url("images/middle-bottom-1.png") no-repeat center/cover;
+  width: 320px;
+  height: 320px;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  border-radius: 16px;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__content__tr1 {
+  background: url("images/right-1.png") no-repeat center/cover;
+  width: 240px;
+  height: 480px;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  border-radius: 16px;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popup__content__tr2 {
+  background: url("images/right-2.png") no-repeat center/cover;
+  width: 320px;
+  height: 320px;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  border-radius: 16px;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.tablet__popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}

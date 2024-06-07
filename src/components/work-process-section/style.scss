@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../../../public/fonts/cera-pro.ttf") format("truetype")
+}
+
+.work-process-container {
+  background-color: #f7f9f9;
+  padding-bottom: 29px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  @media (max-width: 999px) and (min-width: 768px) {
+    width: 97%;
+  }
+}
+
+.work-process-header-1 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #374957;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  @media (max-width: 767px) and (min-width: 360px) {
+    font-weight: 0;
+    font-size: 0;
+  }
+}
+
+.work-process-header-2 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #374957;
+  width: 405px;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  @media (max-width: 1439px) and (min-width: 1000px) {
+    font-size: 32px;
+  }
+  @media (max-width: 999px) and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media (max-width: 767px) and (min-width: 360px) {
+    font-weight: 0;
+    font-size: 0;
+  }
+}
+
+.graph {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  @media (max-width: 767px) and (min-width: 360px) {
+    margin-top: 0;
+  }
+}
+
+.graph-image {
+  width: 834px;
+  height: 226px;
+  @media (max-width: 999px) and (min-width: 768px) {
+    width: 680px;
+  }
+  @media (max-width: 767px) and (min-width: 360px) {
+    width: 0;
+    height: 0;
+  }
+}
+
+.graph-ver-tablet {
+  width: 380px;
+  height: 540px;
+}
+
+.ver-tablet-image {
+  width: 440px;
+  height: 580px;
+}
+
+.graph-ver-mobile {
+  width: 340px;
+  height: 600px;
+}
